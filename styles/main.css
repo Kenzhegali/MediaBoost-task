@@ -396,7 +396,7 @@ table {
 .intro {
   margin: 0 20px;
   position: relative;
-  background-image: url("../../assets/images/intro-img.png");
+  background-image: url("/assets/images/intro-img.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -750,7 +750,7 @@ table {
 }
 .features__main {
   position: relative;
-  background: url("../../assets/images/features-img.png");
+  background: url("/assets/images/features-img.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1160,7 +1160,7 @@ table {
 }
 .partners__wrapper {
   position: relative;
-  background-image: url("../../assets/images/partners-img.png");
+  background-image: url("/assets/images/partners-img.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
