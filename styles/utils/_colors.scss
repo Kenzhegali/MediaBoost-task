@@ -1,0 +1,62 @@
+// ========== GLOBAL STYLES ==========
+$c-body: #f0f4fa;
+$c-burger: #c7c7c7;
+
+
+
+// ========== BASE COLOR PALETTE ==========
+$c-white: #ffffff;
+$c-whiteSecond: #f4f6f7;
+$c-black: #000000;
+$c-blackSecond: #2d2d2d;
+$c-blackThird: #434343;
+$c-greyDark: #999c9e;
+$c-grey: #cdd0d2;
+$c-greySecond: #E8E8E8;
+$c-orange: #f36f36;
+$c-green: #2e6955;
+$c-blue: #2f62ad;
+
+// ========== header ==========
+$header-bg: $c-white;
+$burger-bg: $c-burger;
+$header-links: $c-blackThird;
+$header-language-btn: $c-greyDark;
+
+// ========== intro ==========
+$intro-title: $c-white;
+$intro-text: $c-white;
+$intro-btn: $c-black;
+
+// ========== info ==========
+$info-text: $c-blackSecond;
+$info-accordion-text: $c-blackThird;
+$info-bg: $c-white;
+
+// ========== features-block ==========
+$features-text: $c-white;
+$features-block-bg-orange: $c-orange;
+$features-block-bg-green: $c-green;
+$features-block-bg-blue: $c-blue;
+
+// ========== news ==========
+$news-title: $c-black;
+$news-category-bg: $c-orange;
+$news-category-text: $c-white;
+$news-bg: $c-white;
+$news-description-bg: $c-white;
+$news-link: $c-blackThird;
+$news-card-title: $c-black;
+$news-card-date: $c-grey;
+$news-card-border: $c-greySecond;
+
+// ========== partners ==========
+$partners-title: $c-white;
+$partners-text: $c-white;
+
+// ========== footer ==========
+$footer-title: $c-black;
+$footer-links: $c-greyDark;
+$footer-form-text: $c-blackThird;
+$footer-input: $c-grey;
+$footer-copyright: $c-greyDark;

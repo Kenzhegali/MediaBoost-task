@@ -1,0 +1,136 @@
+.header {
+  background-color: $header-bg;
+  padding: 15px 0;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: $tablet-min) {
+      position: relative;
+      justify-content: center; 
+    }
+  }
+
+  &__logo {
+    img {
+      height: 50px;
+      width: 80px;
+    }
+
+    @media (max-width: $tablet-min) {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+    }
+  }
+
+  &__nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: $tablet-min) {
+      display: none;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    gap: 50px;
+
+    li a {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 130%;
+      text-align: center;
+      color: $header-links;
+
+      &:hover {
+        color: $c-black;
+      }
+    }
+
+    @media (max-width: $desktop-min) {
+      gap: 30px;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    @media (max-width: $tablet-min) {
+      width: 100%;
+      justify-content: space-between;
+      padding: 0 15px;
+      gap: 0;
+    }
+  }
+
+  &__icon {
+    background: none;
+    border: none;
+    padding: 6px;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
+    &:nth-child(1) {
+      // Поиск
+      @media (max-width: $tablet-min) {
+        display: none;
+      }
+    }
+
+    &:nth-child(2) {
+      // Слабовидящие
+      @media (max-width: $tablet-min) {
+        order: 1;
+      }
+    }
+  }
+
+  &__lang {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 16px;
+    color: $header-language-btn;
+
+    @media (max-width: $tablet-min) {
+      order: 2;
+      font-size: 14px;
+    }
+  }
+
+  &__contact-btn {
+    @include button-style(16px, 10px 20px);
+
+    @media (max-width: $tablet-min) {
+      display: none;
+    }
+  }
+}
+
+#burgerBtn {
+  display: none;
+
+  @media (max-width: $tablet-min) {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    order: 3;
+
+    img {
+      width: 28px;
+      height: 28px;
+    }
+  }
+}

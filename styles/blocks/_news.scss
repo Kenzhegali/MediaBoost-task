@@ -1,0 +1,220 @@
+.news {
+  padding: 60px 0 80px;
+  background: $news-bg;
+  margin: 0 20px;
+  border-radius: 40px;
+  @media (max-width: $mobile-max) {
+    margin: 0;
+  }
+
+  &__container {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: stretch;
+    @media (max-width: $desktop-max) {
+      flex-direction: column;
+    }
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    @media (max-width: $mobile-max) {
+      display: block;
+    }
+  }
+  &__link {
+    text-align: right;
+    a {
+      font-weight: 500;
+      text-decoration: none;
+      display: flex;
+      justify-content: flex-end;
+      color: $news-link;
+      align-items: center;
+      gap: 10px;
+      font-size: 18px;
+      line-height: 130%;
+      letter-spacing: 0px;
+    }
+    @media (max-width: $mobile-max) {
+      display: none;
+    }
+  }
+  &__block {
+    position: relative;
+    flex-basis: 52%;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      height: auto;
+      display: block;
+    }
+  }
+
+  &__block-category {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: $news-category-bg;
+    color: $news-category-text;
+    padding: 6px 14px;
+    border-radius: 100px;
+    z-index: 2;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    @media (max-width: $mobile-max) {
+      top: 20px;
+      left: 20px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 130%;
+    letter-spacing: 0px;
+    color: $news-title;
+    @media (max-width: $mobile-max) {
+      font-size: 28px;
+    }
+  }
+  &__list-category {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: $news-category-bg;
+    color: $news-category-text;
+    padding: 5px 10px;
+    border-radius: 100px;
+    z-index: 2;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    @media (max-width: $mobile-max) {
+      top: 10px;
+      left: 10px;
+    }
+    @media (max-width: $mobile-min) {
+      padding: 2px 5px;
+      font-size: 12px;
+    }
+  }
+
+  &__description {
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 12px;
+    border: 1px solid $news-card-border;
+    z-index: 3;
+    background: $news-description-bg;
+    @media (max-width: $desktop-max) {
+      width: 100%;
+    }
+    @media (max-width: $mobile-max) {
+      padding: 15px 20px;
+    }
+  }
+
+  &__date {
+    color: $news-card-date;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0px;
+    @media (max-width: 570px) {
+      font-size: 12px;
+    }
+    @media (max-width: $mobile-min) {
+      font-size: 10px;
+    }
+  }
+
+  &__main-title {
+    color: $news-title;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0px;
+    @media (max-width: $mobile-max) {
+      font-size: 18px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    position: relative;
+    flex-basis: 46%;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 21px;
+  }
+
+  &__item {
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px #eee;
+
+    img {
+      width: 180px;
+      height: 100%;
+      object-fit: cover;
+      flex-shrink: 0;
+      @media (max-width: $mobile-smax) {
+        width: 172px;
+      }
+      @media (max-width: $mobile-smin) {
+        width: 100px;
+      }
+    }
+
+    &-description {
+      flex: 1;
+      padding: 31px 15px;
+      @media (max-width: $mobile-max) {
+        padding: 15px;
+      }
+      @media (max-width: $mobile-smin) {
+        padding: 5px;
+      }
+    }
+
+    &-title {
+      color: $news-card-title;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 140%;
+      letter-spacing: 0px;
+      @media (max-width: 570px) {
+        font-size: 14px;
+      }
+      @media (max-width: $mobile-min) {
+        font-size: 12px;
+      }
+    }
+  }
+}

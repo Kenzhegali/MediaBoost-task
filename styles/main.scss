@@ -1,0 +1,19 @@
+@import "base/reset";
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/colors";
+@import "utils/container";
+
+@import "blocks/header";
+@import "blocks/burgerMenu";
+@import "blocks/intro";
+@import "blocks/info";
+@import "blocks/features";
+@import "blocks/news";
+@import "blocks/partners";
+@import "blocks/footer";
+
+body {
+  font-family: $font-family-primary;
+  background: $c-body;
+}

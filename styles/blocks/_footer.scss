@@ -1,0 +1,170 @@
+.footer {
+  padding: 60px 0 44px;
+
+  &__container {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+
+    @media (max-width: $mobile-max) {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  &__col {
+    flex-basis: 22.5%;
+
+    @media (max-width: $mobile-max) {
+      flex-basis: 100%;
+    }
+
+    &--form {
+      flex-basis: 40%;
+
+      @media (max-width: $mobile-max) {
+        flex-basis: 100%;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0px;
+    color: $footer-title;
+
+    @media (max-width: $mobile-min) {
+      font-size: 16px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 15px;
+
+      a {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        letter-spacing: 0px;
+        transition: 0.2s;
+        color: $footer-links;
+
+        &:hover {
+          color: $c-blackThird;
+        }
+
+        @media (max-width: $mobile-min) {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  &__desc {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: $footer-form-text;
+
+    @media (max-width: $mobile-min) {
+      font-size: 15px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 20px;
+
+    @media (max-width: $mobile-max) {
+      gap: 10px;
+    }
+    @media (max-width: $mobile-min) {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  &__input {
+    flex: 1;
+    padding: 10px 14px;
+    border: 1px solid $footer-input;
+    border-radius: 8px;
+    font-size: 16px;
+
+    @media (max-width: $mobile-max) {
+      padding: 8px 12px;
+    }
+    @media (max-width: $mobile-min) {
+      font-size: 15px;
+    }
+  }
+
+  &__button {
+    @include button-style(15px, 12px 35px);
+
+    @media (max-width: $mobile-max) {
+      @include button-style(14px, 10px 20px);
+    }
+  }
+
+  &__social-title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0px;
+    color: $footer-title;
+
+    @media (max-width: $mobile-min) {
+      font-size: 15px;
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: 12px;
+
+    a img {
+      width: 30px;
+      height: 30px;
+      opacity: 0.7;
+      transition: 0.3s;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__bottom {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 130%;
+    letter-spacing: 0px;
+    color: $footer-copyright;
+
+    &-container {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 24px;
+
+      @media (max-width: $mobile-max) {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  }
+}

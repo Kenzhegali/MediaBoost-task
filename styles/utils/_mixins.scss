@@ -1,0 +1,21 @@
+
+@mixin button-style($font-size, $padding: 12px 24px) {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: $font-size;
+  line-height: 150%;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+  color: $c-whiteSecond;
+  background-color: $c-blackSecond;
+  padding: $padding;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.4s;
+
+  &:hover {
+    background-color: darken($c-black, 10%);
+  }
+}

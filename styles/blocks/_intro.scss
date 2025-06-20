@@ -1,0 +1,133 @@
+.intro {
+  margin: 0 20px;
+  position: relative;
+  background-image: url("../../assets/images/intro-img.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1050px;
+  border-radius: 40px 40px 0 0;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #4343435e;
+    z-index: 1;
+    border-radius: 40px 40px 0 0;
+    @media (max-width: 767.98px) {
+      border-radius: 20px 20px 0 0;
+    }
+  }
+  @media (max-width: $tablet-max) {
+    margin: 0;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 120px;
+    position: relative;
+    z-index: 2;
+    height: 100%;
+
+    @media (max-width: $mobile-max) {
+      padding-bottom: 60px;
+      gap: 0;
+    }
+  }
+
+  &__content {
+    z-index: 2;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 130%;
+    color: $intro-title;
+    margin-bottom: 25px;
+
+    @media (max-width: $tablet-max) {
+      font-size: 56px;
+    }
+
+    @media (max-width: $mobile-max) {
+      font-size: 36px;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: $intro-text;
+    margin-bottom: 50px;
+
+    @media (max-width: $tablet-max) {
+      font-size: 20px;
+    }
+
+    @media (max-width: $mobile-max) {
+      font-size: 18px;
+    }
+  }
+
+  &__btn {
+    @include button-style(18px, 16px 50px);
+
+    @media (max-width: $tablet-max) {
+      font-size: 16px;
+      padding: 14px 40px;
+    }
+    @media (max-width: $mobile-min) {
+      padding: 11px 35px;
+    }
+  }
+
+  &__links {
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    @media (max-width: $mobile-max) {
+      gap: 20px;
+    }
+  }
+
+  &__arrow {
+    border-radius: 50%;
+    border: 1px solid $c-white;
+    transition: 0.3s;
+    padding: 20px;
+    &:hover {
+      opacity: 0.7;
+    }
+
+    @media (max-width: $mobile-max) {
+      padding: 0;
+    }
+    @media (max-width: $mobile-min) {
+    }
+  }
+
+  @media (max-width: $tablet-max) {
+    height: 700px;
+  }
+
+  @media (max-width: $mobile-max) {
+    height: 600px;
+    border-radius: 20px 20px 0 0;
+    margin: 0;
+    padding: 0 20px;
+  }
+}
+.arrow {
+  width: 24px;
+  height: 24px;
+  @media (max-width: $mobile-min) {
+    width: 48px;
+    height: 24px;
+  }
+}

@@ -1,0 +1,152 @@
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background-color: $burger-bg;
+  padding: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0px;
+  text-align: center;
+  color: $c-blackThird;
+
+  &.active {
+    display: flex;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    height: 50px;
+    padding-left: 80px;
+  }
+  &__right {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  &__lang {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0px;
+    color: $c-greyDark;
+  }
+
+  &__close {
+    border: 1px solid $c-blue;
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+  &__search {
+    display: flex;
+    margin: 30px 0 40px 0;
+    padding: 10px;
+    border: 1px solid $c-greyDark;
+    border-radius: 10px;
+
+    input {
+      flex: 1;
+      border: none;
+      outline: none;
+      background: transparent;
+      font-size: 16px;
+    }
+
+    button {
+      background: none;
+      border: none;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+
+    li a {
+      text-decoration: none;
+    }
+
+    .has-submenu {
+      position: relative;
+
+      .submenu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        cursor: pointer;
+      }
+
+      .mobile-submenu {
+        margin-top: 16px;
+        padding: 24px;
+        border-radius: 12px;
+        border: 1px solid $c-white;
+        display: none;
+        flex-direction: column;
+        gap: 24px;
+        li {
+          position: relative;
+          padding-bottom: 12px;
+
+          a {
+            text-decoration: none;
+            color: $c-blackThird;
+            font-size: 16px;
+          }
+          &:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            border-bottom: 1px dashed $c-white;
+            opacity: 0.4;
+          }
+        }
+      }
+
+      &.open .mobile-submenu {
+        display: flex;
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 30px;
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &__contact {
+    @include button-style(15px, 13px);
+    margin-top: 30px;
+    width: 100%;
+  }
+}

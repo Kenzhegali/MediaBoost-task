@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Alatau city</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__logo">
+        <img src="./assets/icons/logo.svg" alt="Alatau City Logo" />
+      </div>
+
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a href="#">Об Алатау</a></li>
+          <li><a href="#">Инвесторам</a></li>
+          <li><a href="#">Для СМИ</a></li>
+          <li><a href="#">Галерея</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__controls">
+        <button class="header__icon"><img src="./assets/icons/icon-search.svg" alt="Поиск" /></button>
+        <button class="header__icon"><img src="./assets/icons/icon-eye.svg" alt="Версия для слабовидящих" /></button>
+
+        <button class="header__lang">
+          RU <img src="./assets/icons/icon-down-arrow-small.svg" alt="">
+        </button>
+
+        <button class="header__contact-btn">Связаться с нами</button>
+
+      </div>
+      <button id="burgerBtn">
+        <img src="./assets/icons/icon-burger.svg" alt="burger menu">
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu__top">
+      <img src="./assets/icons/icon-eye.svg" alt="eye">
+      <img src="./assets/icons/logo.svg" alt="Alatau City Logo" class="mobile-menu__logo" />
+      <div class="mobile-menu__right">
+        <a class="mobile-menu__lang" href="">RU <img src="./assets/icons/icon-down-arrow-small.svg" alt="arrow" /></a>
+
+        <button class="mobile-menu__close" id="menuClose">
+          <img src="./assets/icons/icon-close.svg" alt="Close menu" />
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu__search">
+      <input type="text" placeholder="Поиск" />
+      <button><img src="./assets/icons/icon-search-burger.svg" alt="search" /></button>
+    </div>
+
+    <ul class="mobile-menu__list">
+      <li class="has-submenu">
+        <div class="submenu-toggle" id="submenuToggle">
+          Об Алатау <img src="./assets/icons/icon-down-arrow-small.svg" alt="" />
+        </div>
+        <ul class="mobile-submenu" id="submenu">
+          <li><a href="#">О городе Алатау</a></li>
+          <li><a href="#">Районы города</a></li>
+          <li><a href="#">Цифры и факты</a></li>
+          <li><a href="#">Инфраструктура</a></li>
+          <li><a href="#">Логистика</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Инвесторам</a></li>
+      <li><a href="#">Для СМИ</a></li>
+      <li><a href="#">Галерея</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+
+    <div class="mobile-menu__socials">
+      <a href="#"><img src="./assets/icons/icon-youtube-bruger.svg" alt="YouTube" /></a>
+      <a href="#"><img src="./assets/icons/icon-in-burger.svg" alt="LinkedIn" /></a>
+      <a href="#"><img src="./assets/icons/icon-inst-burger.svg" alt="Instagram" /></a>
+      <a href="#"><img src="./assets/icons/icon-facebook-burger.svg" alt="Facebook" /></a>
+      <a href="#"><img src="./assets/icons/icon-tg-burger.svg" alt="Telegram" /></a>
+    </div>
+
+    <button class="mobile-menu__contact">Связаться с нами</button>
+  </div>
+
+
+  <section class="intro">
+    <div class="container intro__container">
+      <div class="intro__content">
+        <h2 class="intro__title">
+          Alatau City
+        </h2>
+        <p class="intro__text">
+          Территория опережающего развития
+        </p>
+        <button class="intro__btn">
+          Подробнее
+        </button>
+      </div>
+      <div class="intro__links">
+        <a href="#" class="intro__arrow"><img class="arrow" src="./assets/icons/icon-left-arrow.svg" alt=""></a>
+        <a href="#" class="intro__arrow"><img class="arrow" src="./assets/icons/icon-right-arrow.svg" alt=""></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="container info__container">
+      <div class="info__block">
+        <p class="info__description">
+          Алатау – стратегический проект Казахстана, призванный стать международным Центрально-Азиатским хабом.
+        </p>
+
+        <p class="info__description">
+          Город расположен вдоль стратегической автомагистрали Алматы-Конаев, соединяющей транспортный коридор Западная
+          Европа – Западный Китай. Представляет собой уникальное сочетание четырех дистриктов, общей площадью 88 000 га.
+        </p>
+        <div class="accordion">
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <a href="" class="accordion__header-link"><img src="./assets/icons/icon-green.svg" alt="green"
+                  class="accordion__icon" />
+                Green District</a>
+              <img src="./assets/icons/icon-down-arrow.svg" alt="arrow">
+            </button>
+            <div class="accordion__content">
+              <p>Content about Green District...</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <a href="" class="accordion__header-link"><img src="./assets/icons/icon-growing.svg" alt="growing"
+                  class="accordion__icon" />
+                Growing District</a>
+              <img src="./assets/icons/icon-down-arrow.svg" alt="arrow">
+            </button>
+            <div class="accordion__content">
+              <p>Content about Growing District...</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <a href="" class="accordion__header-link"><img src="./assets/icons/icon-golden.svg" alt="golden"
+                  class="accordion__icon" />
+                Golden District</a>
+              <img src="./assets/icons/icon-down-arrow.svg" alt="arrow">
+            </button>
+            <div class="accordion__content">
+              <p>Content about Golden District...</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <a href="" class="accordion__header-link"><img src="./assets/icons/icon-gate.svg" alt=""
+                  class="accordion__icon" />
+                Gate District</a>
+
+              <img src="./assets/icons/icon-down-arrow.svg" alt="arrow">
+            </button>
+            <div class="accordion__content">
+              <p>Content about Gate District...</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="info__map">
+        <a href="#">
+          <img src="./assets/images/Map.png" alt="map">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container features__container">
+      <div class="features__main">
+        <h3 class="features__main-title">Город инвестиционных возможностей</h3>
+      </div>
+      <div class="features__block">
+        <div class="features__item orangebg">
+          <img class="features__item-arrow" src="./assets/icons/icon-block-arrow.svg" alt="arrow">
+          <h3 class="features__item-title">
+            Специальная индустриальная зона ALATAU
+          </h3>
+          <p class="features__item-text">
+            Почему стоит инвестировать в ALATAU SEZ?
+          </p>
+        </div>
+        <div class="features__item greenbg">
+          <img class="features__item-arrow" src="./assets/icons/icon-block-arrow.svg" alt="arrow">
+          <h3 class="features__item-title">
+            Как стать инвестором?
+          </h3>
+          <p class="features__item-text">
+            Регистрация юридического лица в Алатау,
+            налоговые льготы для компаний,
+            государственная поддержка
+          </p>
+        </div>
+        <div class="features__item bluebg">
+          <img class="features__item-arrow" src="./assets/icons/icon-block-arrow.svg" alt="arrow">
+          <h3 class="features__item-title">
+            Свободная таможенная зона
+          </h3>
+          <p class="features__item-text">
+            Упрощенные условия бля ввоза и вывоза
+            товаров без уплаты таможенных пошлин
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="news">
+    <div class="container">
+
+      <div class="news__main">
+        <h2 class="news__title">Новости и события города</h2>
+        <div class="news__link">
+          <a href="#">Все новости <img src="./assets/icons/icon-new-arrow.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="news__container">
+        <div class="news__block">
+          <span class="news__block-category">Новости</span>
+          <img src="./assets/images/news-img.png" alt="news left block img">
+          <div class="news__description">
+            <span class="news__date">
+              12.04.2025
+            </span>
+            <h3 class="news__main-title">
+              Заголовок главной новости о городе Алатау не больше 80 символов
+            </h3>
+          </div>
+        </div>
+        <div class="news__list">
+          <div class="news__item">
+            <span class="news__list-category">Интервью</span>
+            <img src="./assets/images/news-card-img-1.png" alt="news img1">
+            <div class="news__item-description">
+              <span class="news__date">
+                12.04.2025
+              </span>
+              <h3 class="news__item-title">
+                Заголовок главной новости о новом городе Алатау
+              </h3>
+            </div>
+          </div>
+          <div class="news__item">
+            <span class="news__list-category">Новости</span>
+            <img src="./assets/images/news-card-img-2.png" alt="news img1">
+            <div class="news__item-description">
+              <span class="news__date">
+                12.04.2025
+              </span>
+              <h3 class="news__item-title">
+                Заголовок главной новости о новом городе Алатау
+              </h3>
+            </div>
+          </div>
+          <div class="news__item">
+            <span class="news__list-category">События</span>
+            <img src="./assets/images/news-card-img-3.png" alt="news img1">
+            <div class="news__item-description">
+              <span class="news__date">
+                12.04.2025
+              </span>
+              <h3 class="news__item-title">
+                Заголовок главной новости о новом городе Алатау
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="partners">
+    <div class="container">
+      <div class="partners__wrapper">
+        <div class="partners__info">
+          <h2 class="partners__title">
+            Наши партнеры
+          </h2>
+          <p class="partners__text">
+            Алатау – город, где встречаются амбиции, инновации и партнерство. Совместными усилиями мы реализуем значимые
+            проекты, открывая новые горизонты для жителей города и формируя будущее, наполненное возможностями.
+          </p>
+          <button class="partners__btn">
+            Подробнее
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__col">
+        <h4 class="footer__title">О городе</h4>
+        <ul class="footer__list">
+          <li><a href="#">О городе Алатау</a></li>
+          <li><a href="#">СЭЗ Алатау</a></li>
+          <li><a href="#">Инвесторам</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__title">Прочее</h4>
+        <ul class="footer__list">
+          <li><a href="#">Онлайн-подача заявки на участие в проектах</a></li>
+          <li><a href="#">Регистрация юридического лица в Алатау</a></li>
+          <li><a href="#">Карта сайта</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col footer__col--form">
+        <h4 class="footer__title">Есть вопросы или предложения?</h4>
+        <p class="footer__desc">Отправьте почту и мы свяжемся с вами в ближайшее время!</p>
+        <form class="footer__form">
+          <input type="email" placeholder="Email" class="footer__input" />
+          <button type="submit" class="footer__button">Отправить</button>
+        </form>
+        <p class="footer__social-title">Следите за нами в соцсетях:</p>
+        <div class="footer__social">
+          <a href="#"><img src="./assets/icons/icon-youtube.svg" alt="YouTube" /></a>
+          <a href="#"><img src="./assets/icons/icon-in.svg" alt="LinkedIn" /></a>
+          <a href="#"><img src="./assets/icons/icon-insta.svg" alt="Instagram" /></a>
+          <a href="#"><img src="./assets/icons/icon-facebook.svg" alt="Facebook" /></a>
+          <a href="#"><img src="./assets/icons/icon-tg.svg" alt="Telegram" /></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-container">
+        <p>© Alatau City, 2025</p>
+        <p>Дизайн и разработка: KeipTech</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
