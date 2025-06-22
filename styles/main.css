@@ -866,7 +866,7 @@ table {
   top: 0;
   left: 0;
   z-index: 1;
-  background: url("../../assets/images/features-block-1.png");
+  background: url("../assets/images/features-block-1.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 105px;
@@ -883,7 +883,7 @@ table {
   top: 0;
   left: 0;
   z-index: 1;
-  background: url("../../assets/images/features-block-2.png");
+  background: url("../assets/images/features-block-2.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 105px;
@@ -901,7 +901,7 @@ table {
   top: 0;
   left: 0;
   z-index: 1;
-  background: url("../../assets/images/features-block-3.png");
+  background: url("../assets/images/features-block-3.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 105px;
@@ -1101,7 +1101,6 @@ table {
   display: flex;
   position: relative;
   align-items: center;
-  background-color: #fff;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 0 0 1px #eee;
